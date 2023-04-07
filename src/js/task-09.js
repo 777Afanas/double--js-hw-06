@@ -11,9 +11,7 @@ const handleClickCl = (event) => {
 
   document.body.style.backgroundColor = getRandomHexColor();
 
-  // console.log(document.body.style.backgroundColor);
-
-  colorSpan.textContent = document.body.style.backgroundColor;
+  colorSpan.textContent = `${getRandomHexColor()}`;
 }
 
 button.addEventListener("click", handleClickCl);
@@ -21,15 +19,3 @@ button.addEventListener("click", handleClickCl);
 
 
 
-// const buttonEl = document.querySelector(".my-button");
-
-// const handleClick = () => {
-//   console.log("Button was clicked");
-// };
-
-// buttonT.addEventListener("click", handleClick);
-
-// <div class="widget">
-//       <p>Background color: <span class="color">-</span></p>
-//       <button type="button" class="change-color">Change color</button>
-//     </div>
